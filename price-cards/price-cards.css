@@ -1,6 +1,8 @@
 @layer component {
   #price-cards {
     --card-border-radius: 8px;
+    --card-imp-text-clr: rgb(235, 235, 235);
+    --card-text-clr: black;
 
     display: grid;
     grid-auto-columns: 1fr;
@@ -16,7 +18,7 @@
 
   .card__title {
     background: var(--primary-clr);
-    color: var(--card-title-clr);
+    color: var(--card-imp-text-clr);
     margin: 0;
     padding-block: 15px;
     text-align: center;
@@ -27,6 +29,10 @@
 
   .card__content {
     padding: 30px;
+  }
+
+  p {
+    color: var(--card-text-clr);
   }
 
   .card__price {
@@ -40,5 +46,17 @@
     font-weight: normal;
     font-size: var(--font-sz-sm);
     padding-left: 5px;
+  }
+
+  .card__buy-link {
+    display: block;
+    background-color: var(--primary-clr);
+    color: var(--card-imp-text-clr);
+    padding: 0.5em 1em;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }
