@@ -59,4 +59,10 @@
     text-transform: uppercase;
     font-weight: bold;
   }
+
+  @media (max-width: 600px) {
+    #price-cards {
+      grid-auto-flow: row;
+    }
+  }
 }
