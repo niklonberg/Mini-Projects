@@ -60,9 +60,19 @@
     font-weight: bold;
   }
 
+  .card-best-value {
+    --primary-clr: rgb(222, 135, 43);
+  }
+
+  .card-ultimate {
+    --primary-clr: rgb(171, 55, 61);
+  }
+
   @media (max-width: 600px) {
     #price-cards {
       grid-auto-flow: row;
+      gap: 32px;
+      text-align: center;
     }
   }
 }
