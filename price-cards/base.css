@@ -1,5 +1,7 @@
 @layer base {
   :root {
+    --primary-clr: rgb(46, 52, 85);
+    --card-title-clr: rgb(235, 235, 235);
   }
 
   *,
@@ -18,5 +20,9 @@
   button,
   select {
     font: inherit;
+  }
+
+  h1 {
+    margin-bottom: 80px;
   }
 }
